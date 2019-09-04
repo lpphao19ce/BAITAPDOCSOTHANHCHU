@@ -1,0 +1,64 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#include<string.h>
+int main()
+{int n,sodv,sochuc;
+        char chuoidv[100];
+        char chuoichuc[100];
+        char chuoi[100];
+        printf("nhap n=");
+        scanf("%d",&n);
+        sodv=n%10;
+        sochuc=n/10;
+      switch (sochuc)
+{     
+      case 0:strcpy(chuoi,"Khong");
+           break;
+      case 1:strcpy(chuoi,"Mot");
+           break;
+      case 2:strcpy(chuoi,"Hai");
+           break;
+	  case 3:strcpy(chuoi,"Ba");
+           break;
+	  case 4:strcpy(chuoi,"Bon");
+           break;
+	  case 5:strcpy(chuoi,"Nam");
+           break;
+      case 6:strcpy(chuoi,"Sau");
+           break;
+      case 7:strcpy(chuoi,"Bay");
+           break;
+	  case 8:strcpy(chuoi,"Tam");
+           break;
+	  case 9:strcpy(chuoi,"Chin");
+           break;  
+       }
+switch(sodv)
+{     case 0:strcpy(chuoi,"Khong");
+           break;
+      case 1:strcpy(chuoi,"Mot");
+           break;
+      case 2:strcpy(chuoi,"Hai");
+           break;
+	  case 3:strcpy(chuoi,"Ba");
+           break;
+	  case 4:strcpy(chuoi,"Bon");
+           break;
+	  case 5:strcpy(chuoi,"Nam");
+           break;
+      case 6:strcpy(chuoi,"Sau");
+           break;
+      case 7:strcpy(chuoi,"Bay");
+           break;
+	  case 8:strcpy(chuoi,"Tam");
+           break;
+	  case 9:strcpy(chuoi,"Chin");
+           break;  
+}
+strcpy(chuoi,chuoichuc);
+strcpy(chuoi,chuoidv);
+printf("%s",chuoi);
+getch();
+
+}
